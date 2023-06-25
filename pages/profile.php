@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
     <script type="text/javascript" src="scripts/script.js"></script>
-    <title>Module de connexion - Inscription</title>
+    <title>Gestion de menu - Profil</title>
 </head>
 <body>
     <?php include "../includes/header.php" ?>

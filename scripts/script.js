@@ -20,4 +20,3 @@ addEventListener("DOMContentLoaded", () => {
     formButton = document.getElementById("submit")
     formButton.addEventListener("click", editUser)
 })
-

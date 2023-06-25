@@ -92,7 +92,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
-    <title>Module de connexion - Inscription</title>
+    <title>Gestion de menu - Connexion/Inscription</title>
 </head>
 <body>
     <?php include "../includes/header.php" ?>
@@ -115,7 +115,7 @@
                 <h2>Creation de compte</h2>
                 <?php 
                     if( !empty($register_message) ){
-                        echo $register_message . "</br>";;
+                        echo $register_message . "</br>";
                         foreach( $passtest as $error ){
                             echo $error . "</br>";
                         }

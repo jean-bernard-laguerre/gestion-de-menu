@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/style.css">
-    <title>Gestion de menu - Accueil</title>
+    <title>Gestion de menu - Ingredient</title>
 </head>
 <body>
     <?php include "../includes/header.php" ?>
@@ -17,7 +17,7 @@
         <?php if(!empty($_SESSION)) : ?>
             <div class="container">
                 <h2>
-                    <?php {echo "Bienvenue " . $_SESSION["login"] . ".";}?>
+                    <?php {echo "Ingredient " . $_SESSION["login"] . ".";}?>
                 </h2>
             </div>
         <?php endif ?>

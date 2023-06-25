@@ -6,7 +6,7 @@
 
         public $id;
         public $login;
-        public $pdo;
+        private $pdo;
 
         function __construct($login)
         {
