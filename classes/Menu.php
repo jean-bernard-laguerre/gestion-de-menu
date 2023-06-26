@@ -28,8 +28,16 @@
             $this->id = $this->pdo->bdd->lastInsertId();
         }
 
-        public function delete() {
+        public function edit($id) {
 
+            $this->id = $id;
+
+            $sql = "UPDATE menu 
+            SET name = ?, description = ?, image = ?, restaurant_id = ?,
+            WHERE id = ?";
+
+            $req = $GLOBALS["bdd"]->prepare($sql);
+            $req->execute( [$this->name, $this->description, $this->image, $this->restaurant, $this->id] );
         }
 
         public function addDish($dishes) {

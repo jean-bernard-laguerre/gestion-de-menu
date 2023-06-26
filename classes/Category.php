@@ -18,12 +18,14 @@
             $req->execute([$this->name]);
         }
 
-        function remove() {
-            $sql = "DELETE FROM category
-                    WHERE name = ?";
+        function edit($id) {
 
-            $req = $this->pdo->bdd->prepare($sql);
-            $req->execute([$this->name]);
+            $sql = "UPDATE restaurant 
+            SET name = ?,
+            WHERE id = ?";
+
+            $req = $GLOBALS["bdd"]->prepare($sql);
+            $req->execute( [$this->name, $id] );
         }
     }
 ?>

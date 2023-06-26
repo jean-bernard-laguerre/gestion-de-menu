@@ -5,7 +5,7 @@ function editUser() {
 
     data = {login: newLogin.value, password: newPassword.value}
 
-    fetch('edit.php', {
+    fetch('../functions/edit.php', {
                 method: 'POST',
                 headers: {
                     'Content-Type':'application/json'

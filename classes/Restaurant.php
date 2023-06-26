@@ -21,8 +21,14 @@
             
         }
 
-        public function delete() {
+        public function edit($id) {
 
+            $sql = "UPDATE restaurant 
+            SET name = ?,
+            WHERE id = ?";
+
+            $req = $GLOBALS["bdd"]->prepare($sql);
+            $req->execute( [$this->name, $id] );
         }
     }
 ?>
